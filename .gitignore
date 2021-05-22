@@ -1,0 +1,4 @@
+js/build.js
+js/package-lock.json
+js/node_modules/
+js/src/data/InitialConditions.json

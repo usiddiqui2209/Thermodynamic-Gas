@@ -31,8 +31,7 @@ NOTE: The initial state of the system is loaded from `InitialState.csv` file eac
       important so that the experiment can be repeated multiple times from the same
       initial state. To generate a new state, InitialState.py MUST be run before running App.py each time.
 
-######## FILES INCLUDED ########
-
+#### Files included
 - App.py [Application entry point]
 
 - Ball.py [Ball class containing methods for collision prediction, rebound velocity calculation and ball rendering]
@@ -46,7 +45,7 @@ NOTE: The initial state of the system is loaded from `InitialState.csv` file eac
 - WriteOutput.py [Outputs data to a CSV file for data analysis in other software]
 
 ### Javascript (Not recommended)
-To run the Javascript version, first ensure you have the latest of [NodeJS](https://nodejs.org/en/) and Browserify[https://browserify.org/] installed. Then:
+To run the Javascript version, first ensure you have the latest of [NodeJS](https://nodejs.org/en/) and [Browserify](https://browserify.org/) installed. Then:
 
 - Open InitialConditionGenerator.js and configure the initial state of the system.
 
@@ -55,6 +54,19 @@ To run the Javascript version, first ensure you have the latest of [NodeJS](http
 - Navigate to `/src` and run `browserify App.js -o build.js`. This will compile your modules.
 
 - Navigate to the root directory and open `index.html`. You will see your simulation running on the canvas.
+
+#### Files included
+- App.js [Application entry point]
+
+- Ball.js [Ball class containing methods for collision prediction, rebound velocity calculation and ball rendering]
+
+- Config.js [Configuration file containing parameters that can be modified by the user]
+
+- Canvas.js [Responsible for rendering]
+
+- InitialConditionGenerator.js [Standalone module which generates an initial state]
+
+- WriteOutput.js [Outputs data to a JSON file for data analysis in other software]
 
 ## Issues? Let me know
 Get in touch with me at usman.siddiqui2209@gmail.com to report any issues or bugs.
